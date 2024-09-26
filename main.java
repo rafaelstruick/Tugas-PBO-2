@@ -7,12 +7,12 @@ public class main {
 
             Vivo.nyalakan();
             Vivo.aksesInternet();
-            Vivo.kirimpesan("starlight.dei09@gmail.com", "Pengumpulan Nilai", "Hai");
-            Vivo.kirimpesan("082285352789", "Halo");
+            Vivo.kirimpesan("starlight.dei09@gmail.com", "Pengumpulan Tinggi Badan", "Hello");
+            Vivo.kirimpesan("082285352789", "Selamat Pagi");
             Vivo.matikan();
             nok.nyalakan();
             nok.mainGameSnake();
-            nok.kirimpesan("088955432291", "082285352789", "Hai");
+            nok.kirimpesan("088955432291", "082285352789", "Selamat Pagi");
             nok.matikan();
         }
     }
