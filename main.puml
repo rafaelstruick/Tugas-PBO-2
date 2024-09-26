@@ -1,0 +1,45 @@
+
+@startuml main
+class main {
+    + static void main(String[] args)
+}
+class Handphone {
+    - String merk
+    - String model
+    - String nomorTujuan;
+    - String Pesan;
+    - String nomorTujuan1;
+    - String nomorTujuan2;
+    - String[] daftarnomor;
+    + Handphone(String merk, String model)
+    + void nyalakan()
+    + void matikan()
+    + void kirimpesan (String nomorTujuan, String Pesan)
+    + void kirimpesan (String nomorTujuan1, String nomorTujuan2, String Pesan)
+    + void kirimpesan (String[] daftarnomor, String Pesan)
+}
+
+class Smartphone {
+    + String emailTujuan;
+    + String subjek;
+    + Smartphone(String merk, String model)
+    + void nyalakan() <<override>>
+    + void matikan() <<override>>
+    + void kirimpesan (String nomorTujuan, String Pesan) << override>>
+    + void kirimpesan(String emailTujuan, String subjek, String Pesan) <<overload>>
+    + void aksesInternet()
+}
+
+class FeaturePhone {
+    + FeaturePhone(String merk, String model)
+    + void nyalakan() <<override>>
+    + void matikan() <<override>>
+    + void mainGameSnake()
+}
+
+main <|-- Handphone
+main <|-- Smartphone
+main <|-- FeaturePhone
+Handphone <|-- Smartphone
+Handphone <|-- FeaturePhone
+@enduml
