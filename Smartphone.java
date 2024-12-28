@@ -23,6 +23,10 @@ public class Smartphone extends Handphone {
         this.Pesan = Pesan;
     }
 
+    { void
+        }
+    
+
     void kirimpesan(String emailTujuan, String subjek, String Pesan) {
         this.emailTujuan = emailTujuan;
         this.subjek = subjek;
